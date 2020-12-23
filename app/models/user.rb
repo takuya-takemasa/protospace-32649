@@ -8,8 +8,9 @@ class User < ApplicationRecord
   validates :profile, presence: true
   validates :occupation, presence: true
   validates :position, presence: true
-         
-  has_many :Prototypes
+      
+  has_many :prototypes
   has_many :comments
+  
   #PrototypeモデルとUserモデルに、それぞれを紐付けるためのアソシエーションを記述。
 end
